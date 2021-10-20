@@ -1,7 +1,7 @@
 /*M.G.N*/
 
 const turn = new Vue({
-    el: '#plo-vue',
+    el: '#desde-vue',
     data: {
         titulo: 'Contador de Stock',
         texto: 'Para agregar un producto a la lista haga click en -Añadir- o presione la tecla -Enter- :',
