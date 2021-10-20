@@ -1,0 +1,75 @@
+/*M.G.N*/
+
+.fondo {
+    background: #4169E1;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+    background: #ADD8E6;
+    font-family: sans-serif;
+}
+
+#titulo {
+    font-size: 48px;
+    color: #4682B4;
+    font-weight: 800;
+}
+
+#texto {
+    font-size: 18px;
+    margin-top: -2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#miInput {
+    border: 1px solid black;
+    padding: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+}
+
+#agregar {
+    background: darkslategrey;
+    color: white;
+    border: 1px solid black;
+    padding: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    transition: 0.1s;
+}
+
+#agregar:hover {
+    background: white;
+    color: black;
+}
+
+#mas {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+
+#mas:hover {
+    background: blue;
+    color: white;
+}
+
+#menos {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+
+#menos:hover {
+    background: red;
+    color: white;
+}

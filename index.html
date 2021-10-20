@@ -1,15 +1,36 @@
+<!--M.G.N-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Stock</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 
-<body>
+<body class="fondo">
 
+    <div class="centrar" id="plo-vue">
+        <h1 id="titulo">{{titulo}}</h1>
+        <p id="texto">{{texto}}</p>
+        <input id="miInput" placeholder="Ingrese su producto aqui.." type="text" v-model="nuevoProducto" @keyup.enter="agregarProductoConIf()">
+        <button id="agregar" @click="agregarProductoConIf()">Agregar</button>
+        <ul>
+            <li v-for='producto in productos'>
+                {{producto.nombre}} - <input type="number" v-model.number="producto.cantidad"> <span v-if="producto.cantidad===0"> - Agregue o quite stock:</span>
+                <button id="mas" @click=producto.cantidad++>+</button>
+                <button id="menos" @click=producto.cantidad-->-</button>
+            </li>
+        </ul>
+        <!--Aqui me figuran el total de productos-->
+        <h4>Total de productos: {{sumarProductos}}</h4>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./JS/vue.js"></script>
 </body>
 
 </html>
